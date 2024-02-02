@@ -11,7 +11,7 @@ export const env = createEnv({
       .string()
       .url()
       .refine(
-        (str) => !str.includes("mysql://uk2fioa780yzodkdhcoe:pscale_pw_dGyZ9LnwlK3eCdhQ1DmhZpD5vip5JpgigtOhNVgFYhF@eu-central.connect.psdb.cloud/rattledb?sslaccept=strict"),
+        (str) => !str.includes("YOUR_MYSQL_URL_HERE"),
         "You forgot to change the default URL"
       ),
     NODE_ENV: z

@@ -14,8 +14,37 @@ datasource db {
     relationMode = "prisma"
 }
 
+model Animal {
+    id        String   @id @default(cuid())
+    name      String
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    breed     String
+    height    Decimal  @db.Decimal(5,2) @default(0)
+    length    Decimal  @db.Decimal(5,2) @default(0)
+    weight    Decimal  @db.Decimal(5,2) @default(0)
+
+    @@index([name, breed])
+}
+
+model Animal_Problem {
+    id        String   @id @default(cuid())
+    name      String
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+
+    @@index([name])
+}
+
+model Animal_Problems {
+    id                  Int     @id @default(autoincrement())
+    Animal_Id           String
+    Animal_Problem_Id   String
+    @@index([id,Animal_Id,Animal_Problem_Id])
+}
+
 model Post {
-    id        Int      @id @default(autoincrement())
+    id        String   @id @default(cuid())
     name      String
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
