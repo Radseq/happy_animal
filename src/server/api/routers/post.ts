@@ -1,6 +1,6 @@
 import { TRPCError } from "@trpc/server";
-import { CreateRateLimit } from "RateLimit";
 import { z } from "zod";
+import { CreateRateLimit } from "~/RateLimit";
 
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 
