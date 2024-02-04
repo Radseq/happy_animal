@@ -11,6 +11,7 @@
 
     /* Strictness */
     "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "noUncheckedIndexedAccess": true,
     "checkJs": true,
 
