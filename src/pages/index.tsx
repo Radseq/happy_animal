@@ -1,5 +1,9 @@
 import Head from "next/head"
+import { AnimalFrame } from "~/features/animalFrame"
+
 export default function Home() {
+	const items = Array.from({ length: 20 }, (_, i) => `Item ${i + 1}`)
+
 	return (
 		<>
 			<Head>
@@ -8,11 +12,33 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
+				<header>aa</header>
 				<div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
 					<h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
 						Help Animals
 					</h1>
-					<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8 lg:grid-cols-3"></div>
+					<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">
+						<AnimalFrame
+							animalImage="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg?w=153&h=153"
+							incomeItems={items}
+						/>
+						<AnimalFrame
+							animalImage="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg?w=153&h=153"
+							incomeItems={items}
+						/>
+						<AnimalFrame
+							animalImage="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg?w=153&h=153"
+							incomeItems={items}
+						/>
+						<AnimalFrame
+							animalImage="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg?w=153&h=153"
+							incomeItems={items}
+						/>
+						<AnimalFrame
+							animalImage="https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg?w=153&h=153"
+							incomeItems={items}
+						/>
+					</div>
 				</div>
 			</main>
 		</>
