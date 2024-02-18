@@ -40,7 +40,7 @@ export const Navbar = () => {
 						<li className="m-auto px-3">
 							<a
 								href="#"
-								className="md:p-0·md:hover:bg-transparent·md:hover:text-blue-700·dark:border-gray-700·dark:text-white·dark:hover:bg-gray-700·dark:hover:text-white"
+								className="dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
 							>
 								About
 							</a>
@@ -49,7 +49,7 @@ export const Navbar = () => {
 							<li className="m-auto px-3">
 								<Link
 									href="/signIn"
-									className="md:p-0·md:hover:bg-transparent·md:hover:text-blue-700·dark:border-gray-700·dark:text-white·dark:hover:bg-gray-700·dark:hover:text-white"
+									className="dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
 								>
 									Sign in
 								</Link>
@@ -67,7 +67,7 @@ export const Navbar = () => {
 
 								<button
 									type="button"
-									className="md:me-0·dark:focus:ring-gray-60 flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300"
+									className="dark:focus:ring-gray-60 flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300 md:me-0"
 									id="user-menu-button"
 									aria-expanded="false"
 									data-dropdown-toggle="user-dropdown"
