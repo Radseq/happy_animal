@@ -2,7 +2,6 @@ import { useUser } from "@clerk/nextjs"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import { SignOutButton } from "./SignOutButton"
 
 export const Navbar = () => {
 	const { user, isSignedIn } = useUser()
