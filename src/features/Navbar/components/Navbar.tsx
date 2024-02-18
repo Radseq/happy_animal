@@ -27,7 +27,7 @@ export const Navbar = () => {
 				>
 					<ul
 						onMouseLeave={() => setShowUserMenu(false)}
-						className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse"
+						className="dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse"
 					>
 						<li className="m-auto px-3">
 							<Link
@@ -40,7 +40,7 @@ export const Navbar = () => {
 						<li className="m-auto px-3">
 							<a
 								href="#"
-								className="block rounded text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+								className="md:p-0·md:hover:bg-transparent·md:hover:text-blue-700·dark:border-gray-700·dark:text-white·dark:hover:bg-gray-700·dark:hover:text-white"
 							>
 								About
 							</a>
@@ -49,7 +49,7 @@ export const Navbar = () => {
 							<li className="m-auto px-3">
 								<Link
 									href="/signIn"
-									className="block rounded text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+									className="md:p-0·md:hover:bg-transparent·md:hover:text-blue-700·dark:border-gray-700·dark:text-white·dark:hover:bg-gray-700·dark:hover:text-white"
 								>
 									Sign in
 								</Link>
@@ -67,7 +67,7 @@ export const Navbar = () => {
 
 								<button
 									type="button"
-									className="flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 md:me-0"
+									className="md:me-0·dark:focus:ring-gray-60 flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300"
 									id="user-menu-button"
 									aria-expanded="false"
 									data-dropdown-toggle="user-dropdown"
