@@ -113,9 +113,7 @@ export const Navbar = () => {
 												</a>
 											</li>
 											{isSignedIn && (
-												<li className="block px-4 py-2 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600">
-													
-												</li>
+												<li className="block px-4 py-2 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600"></li>
 											)}
 										</ul>
 									</div>
