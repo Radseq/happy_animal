@@ -2,6 +2,7 @@ import { useUser } from "@clerk/nextjs"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import { SignOutButton } from "./SignOutButton"
 
 export const Navbar = () => {
 	const { user, isSignedIn } = useUser()
@@ -89,20 +90,14 @@ export const Navbar = () => {
 								</button>
 								{showUserMenu && (
 									<div
-										onMouseLeave={() => setShowUserMenu(false)}
 										className="absolute right-0 top-3 z-50 my-4 list-none divide-y divide-gray-100 rounded-lg 
 											bg-white text-base shadow dark:divide-gray-600 dark:bg-gray-700"
 										id="user-dropdown"
 									>
-										<div className="px-4 py-3">
-											<span className="block text-sm text-gray-900 dark:text-white">
-												{user.fullName}
-											</span>
-											<span className="block truncate  text-sm text-gray-500 dark:text-gray-400">
-												{user.emailAddresses[0]?.emailAddress}
-											</span>
-										</div>
 										<ul className="py-2" aria-labelledby="user-menu-button">
+											<li className="block truncate px-4 py-2  text-sm text-gray-500 dark:text-gray-400">
+												{user.emailAddresses[0]?.emailAddress}
+											</li>
 											<li>
 												<a
 													href="#"
@@ -113,7 +108,9 @@ export const Navbar = () => {
 												</a>
 											</li>
 											{isSignedIn && (
-												<li className="block px-4 py-2 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600"></li>
+												<li>
+													<SignOutButton classes="flex content-start w-full px-4 py-2 text-sm  hover:bg-gray-100 dark:hover:bg-gray-600" />
+												</li>
 											)}
 										</ul>
 									</div>
