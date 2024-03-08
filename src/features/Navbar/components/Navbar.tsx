@@ -27,7 +27,8 @@ export const Navbar = () => {
 				>
 					<ul
 						onMouseLeave={() => setShowUserMenu(false)}
-						className="dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse"
+						className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 
+                        dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse"
 					>
 						<li className="m-auto px-3">
 							<Link
@@ -40,7 +41,8 @@ export const Navbar = () => {
 						<li className="m-auto px-3">
 							<a
 								href="#"
-								className="dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
+								className="block rounded text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white 
+                                    dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
 							>
 								About
 							</a>
@@ -49,7 +51,8 @@ export const Navbar = () => {
 							<li className="m-auto px-3">
 								<Link
 									href="/signIn"
-									className="dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
+									className="block rounded text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white 
+                                    dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
 								>
 									Sign in
 								</Link>
@@ -67,7 +70,7 @@ export const Navbar = () => {
 
 								<button
 									type="button"
-									className="dark:focus:ring-gray-60 flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300 md:me-0"
+									className="flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 md:me-0"
 									id="user-menu-button"
 									aria-expanded="false"
 									data-dropdown-toggle="user-dropdown"
@@ -87,7 +90,8 @@ export const Navbar = () => {
 								{showUserMenu && (
 									<div
 										onMouseLeave={() => setShowUserMenu(false)}
-										className="absolute right-0 top-3 z-50 my-4 list-none divide-y divide-gray-100 rounded-lg bg-white text-base shadow dark:divide-gray-600 dark:bg-gray-700"
+										className="absolute right-0 top-3 z-50 my-4 list-none divide-y divide-gray-100 rounded-lg 
+											bg-white text-base shadow dark:divide-gray-600 dark:bg-gray-700"
 										id="user-dropdown"
 									>
 										<div className="px-4 py-3">
@@ -102,7 +106,8 @@ export const Navbar = () => {
 											<li>
 												<a
 													href="#"
-													className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+													className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 
+														dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
 												>
 													Settings
 												</a>
