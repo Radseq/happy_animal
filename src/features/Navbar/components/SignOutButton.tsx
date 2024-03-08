@@ -1,14 +1,15 @@
 import { useClerk } from "@clerk/nextjs"
 import { useRouter } from "next/router"
+import { type FC } from "react"
 
-export const SignOutButton = () => {
+export const SignOutButton: FC<{ classes?: string }> = ({ classes }) => {
 	const { signOut } = useClerk()
 	const router = useRouter()
 
 	return (
 		// Clicking on this button will sign out a user and reroute them to the "/" (home) page.
 		<button
-			className=" text-sm text-gray-700 dark:text-gray-200 dark:hover:text-white"
+			className={classes}
 			onClick={() =>
 				void (async () => {
 					await signOut(() => {
